@@ -46,6 +46,7 @@ sudo make install-pdf
 
 
 ## Key words for search
+These are the error message you will see if your system does not have one or more required dependencies installed.
 
 1. checking whether bzip2 support suffices… configure: error: bzip2 library and headers are required
 
