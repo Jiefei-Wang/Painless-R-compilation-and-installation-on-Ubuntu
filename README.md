@@ -8,7 +8,6 @@ Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (
 sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran -y
 sudo apt-get install gcc-multilib gobjc++ aptitude -y
 sudo apt-get install libreadline-dev -y
-
 sudo apt-get install libbz2-dev -y
 sudo apt-get install libpcre2-dev -y
 sudo apt-get install libcurl4 libcurl4-openssl-dev -y
