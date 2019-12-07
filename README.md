@@ -15,7 +15,7 @@ sudo apt-get install default-jre -y
 ```
 
 # Optional packages
-## For bilding documents
+## For building documents
 ```
 sudo apt-get install texinfo -y
 sudo apt-get install texlive -y
