@@ -45,5 +45,15 @@ sudo make install-pdf
 ```
 
 
+## Key words for search
 
+1. checking whether bzip2 support suffices… configure: error: bzip2 library and headers are required
+
+2. Either pcre >= 8.32 or pcre2 library and headers are required
+
+3. error: --with-readline=yes (default) and headers/libs are not available
+
+4. WARNING: you cannot build PDF versions of the R manuals
+
+5. WARNING: neither inconsolata.sty nor zi4.sty found: PDF vignettes and package manuals will not be rendered optimally
 
