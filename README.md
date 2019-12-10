@@ -46,6 +46,15 @@ sudo make install-pdf
 ```
 
 
+# `devtools` package dependencies
+```
+sudo apt-get install libssl-dev
+sudo apt-get install -y libxml2-dev
+```
+
+
+
+
 ## Key words for search
 These are the error message you will see if your system does not have one or more required dependencies installed.
 
