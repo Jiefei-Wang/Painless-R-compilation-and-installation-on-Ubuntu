@@ -12,6 +12,7 @@ sudo apt-get install libbz2-dev -y
 sudo apt-get install libpcre2-dev -y
 sudo apt-get install libcurl4 libcurl4-openssl-dev -y
 sudo apt-get install default-jre -y
+sudo apt-get install openjdk-8-jdk openjdk-8-jre -y 
 ```
 
 # Optional packages
@@ -26,7 +27,7 @@ sudo apt-get install texlive-fonts-extra -y
 Unzip R source file into a folder and open your terminal at this folder:
 ## Compile without documents 
 ```
-./configure
+./configure --enable-R-shlib
 make
 make check
 sudo make install
@@ -34,7 +35,7 @@ sudo make install
 
 ## Compile With documents
 ```
-./configure
+./configure --enable-R-shlib
 make
 make check
 make pdf
