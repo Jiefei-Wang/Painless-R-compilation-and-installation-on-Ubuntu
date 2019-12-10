@@ -48,8 +48,8 @@ sudo make install-pdf
 
 # `devtools` package dependencies
 ```
-sudo apt-get install libssl-dev
-sudo apt-get install -y libxml2-dev
+sudo apt-get install libssl-dev -y
+sudo apt-get install libxml2-dev -y 
 ```
 
 
