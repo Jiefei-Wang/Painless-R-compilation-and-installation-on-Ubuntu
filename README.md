@@ -13,6 +13,9 @@ sudo apt-get install libpcre2-dev -y
 sudo apt-get install libcurl4 libcurl4-openssl-dev -y
 sudo apt-get install default-jre -y
 sudo apt-get install openjdk-8-jdk openjdk-8-jre -y 
+
+## Export the global environment for R to find the java path
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 All in one
 ```
