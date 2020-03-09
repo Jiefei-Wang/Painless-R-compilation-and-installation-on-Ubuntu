@@ -13,13 +13,16 @@ sudo apt-get install libpcre2-dev -y
 sudo apt-get install libcurl4 libcurl4-openssl-dev -y
 sudo apt-get install default-jre -y
 sudo apt-get install openjdk-8-jdk openjdk-8-jre -y 
-
-## Export the global environment for R to find the java path
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 All in one
 ```
 sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran gcc-multilib gobjc++ aptitude libreadline-dev libbz2-dev libpcre2-dev libcurl4 libcurl4-openssl-dev default-jre openjdk-8-jdk openjdk-8-jre -y
+```
+## Export JAVA path
+Note: This is my personal setting, I am not sure if it will work for all system.
+```
+## Export the global environment for R to find the java path
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
 # Optional packages
