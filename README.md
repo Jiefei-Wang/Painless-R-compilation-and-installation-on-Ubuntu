@@ -18,12 +18,6 @@ All in one
 ```
 sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran gcc-multilib gobjc++ aptitude libreadline-dev libbz2-dev libpcre2-dev libcurl4 libcurl4-openssl-dev default-jre openjdk-8-jdk openjdk-8-jre -y
 ```
-## Export JAVA path
-Note: This is my personal setting, I am not sure if it will work for all system.
-```
-## Export the global environment for R to find the java path
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-```
 
 # Optional packages
 ## For building documents
@@ -38,6 +32,13 @@ sudo apt-get install texinfo texlive texlive-fonts-extra -y
 ```
 # If you are as lazy as a sloth
 Unzip R source file into a folder and open your terminal at this folder:
+## Export JAVA path
+R requires a java path to find the include header. This is my personal setting, I am not sure if it will work for all system.
+```
+## Export the global environment for R to find the java path
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+```
+
 ## Compile without documents 
 ```
 ./configure --enable-R-shlib
