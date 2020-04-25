@@ -12,11 +12,12 @@ sudo apt-get install libbz2-dev -y
 sudo apt-get install libpcre2-dev -y
 sudo apt-get install libcurl4 libcurl4-openssl-dev -y
 sudo apt-get install default-jre -y
+sudo apt-get install default-jdk -y
 sudo apt-get install openjdk-8-jdk openjdk-8-jre -y 
 ```
 All in one
 ```
-sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran gcc-multilib gobjc++ aptitude libreadline-dev libbz2-dev libpcre2-dev libcurl4 libcurl4-openssl-dev default-jre openjdk-8-jdk openjdk-8-jre -y
+sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran gcc-multilib gobjc++ aptitude libreadline-dev libbz2-dev libpcre2-dev libcurl4 libcurl4-openssl-dev default-jre default-jdk openjdk-8-jdk openjdk-8-jre -y
 ```
 
 # Optional packages
