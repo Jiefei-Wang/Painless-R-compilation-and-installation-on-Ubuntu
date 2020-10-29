@@ -36,7 +36,7 @@ Unzip R source file into a folder and open your terminal at this folder:
 ## Export JAVA path
 R requires a java path to find the include header. This is my personal setting, I am not sure if it will work for all system.
 ```
-## Export the global environment for R to find the java path
+## Export a global environment for R to find the java path
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
@@ -74,7 +74,7 @@ sudo apt-get install libssl-dev libxml2-dev -y
 
 
 ## Key words for search
-These are the error message you will see if your system does not have one or more required dependencies installed.
+These are the error message you will see if your system does not meet one or more dependence requirement
 
 1. checking whether bzip2 support suffices… configure: error: bzip2 library and headers are required
 
