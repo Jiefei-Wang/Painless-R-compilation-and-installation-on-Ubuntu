@@ -21,6 +21,12 @@ sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfo
 ```
 
 # Optional packages
+## For the recommended packages
+Go to the top-level directory of the R sources, run
+```
+./tools/rsync-recommended
+```
+
 ## For building documents
 ```
 sudo apt-get install texinfo -y
@@ -31,6 +37,7 @@ All in one
 ```
 sudo apt-get install texinfo texlive texlive-fonts-extra -y
 ```
+
 # If you are as lazy as a sloth
 Unzip R source file into a folder and open your terminal at this folder:
 ## Export JAVA path
