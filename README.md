@@ -49,7 +49,7 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 ## Compile without documents 
 ```
-./configure --enable-R-shlib
+./configure --enable-R-shlib --without-recommended-packages
 make
 make check
 sudo make install
@@ -57,7 +57,7 @@ sudo make install
 
 ## Compile With documents
 ```
-./configure --enable-R-shlib
+./configure --enable-R-shlib --without-recommended-packages
 make
 make check
 make pdf
