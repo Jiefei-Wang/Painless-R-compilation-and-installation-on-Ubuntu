@@ -3,6 +3,15 @@ Compiling R involves installing tons of dependencies, though there are many docu
 
 Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (2019-12-06 r77536). If you like it, please contribute to this project by providing your test result.
 
+# no-brainer installation
+
+```
+sudo apt build-dep r-base-core
+```
+
+
+
+
 # Mandatory packages
 ```
 sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran -y
