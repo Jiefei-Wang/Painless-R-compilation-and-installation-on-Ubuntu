@@ -83,7 +83,7 @@ sudo make install-pdf
 
 # `devtools` package dependencies
 ```
-sudo apt-get install libssl-dev libxml2-dev libcurl4-openssl-dev -y
+sudo apt-get install libssl-dev libxml2-dev libcurl4-openssl-dev libgit2-dev -y
 ```
 
 
