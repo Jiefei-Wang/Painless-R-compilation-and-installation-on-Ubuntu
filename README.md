@@ -7,10 +7,11 @@ Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (
 
 The build-in package management utility is a powerful tool to install all dependences for `R-base`. For installing them, you need to enable the source packages in your `/etc/apt/sources.list`. To do that, you can run
 ```
-perl -p -i -e's/# deb-src/deb-src/' /etc/apt/sources.list
+sudo perl -p -i -e's/# deb-src/deb-src/' /etc/apt/sources.list
 ```
 To install the dependences, run
 ```
+sudo apt-get update
 sudo apt build-dep r-base
 ```
 Note that this would not install the `devtools` dependences. Click [here](#devtools-package-dependencies) to see how to install them
