@@ -5,7 +5,7 @@ Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (
 
 # Download the source code
 ```
-svn checkout https://svn.r-project.org/R/trunk/ r-trunk
+svn checkout https://svn.r-project.org/R/trunk/ r-source
 ```
 
 # Install dependencies
