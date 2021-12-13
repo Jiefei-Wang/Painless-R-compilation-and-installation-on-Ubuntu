@@ -3,7 +3,8 @@ Compiling R involves installing tons of dependencies, though there are many docu
 
 Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (2019-12-06 r77536). If you like it, please contribute to this project by providing your test result.
 
-# Option 1: Using package management(Recommended)
+# Installing dependencies
+## Option 1: Using package management(Recommended)
 
 The build-in package management utility is a powerful tool to install all dependences for `R-base`. For installing them, you need to enable the source packages in your `/etc/apt/sources.list`. To do that, you can run
 ```
@@ -16,69 +17,44 @@ sudo apt build-dep r-base
 ```
 Note that this would not install the `devtools` dependences. Click [here](#devtools-package-dependencies) to see how to install them
 
-# Option 2: Manually installing the dependences
-## Mandatory packages
+## Option 2: Manually installing the dependences
+### Mandatory packages
 ```
-sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran -y
-sudo apt-get install gcc-multilib gobjc++ aptitude -y
-sudo apt-get install libreadline-dev -y
-sudo apt-get install libbz2-dev -y
-sudo apt-get install libpcre2-dev -y
-sudo apt-get install libcurl4 libcurl4-openssl-dev -y
-sudo apt-get install default-jre -y
-sudo apt-get install default-jdk -y
-sudo apt-get install openjdk-8-jdk openjdk-8-jre -y 
-```
-All in one
-```
-sudo apt-get install build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran gcc-multilib gobjc++ aptitude libreadline-dev libbz2-dev libpcre2-dev libcurl4 libcurl4-openssl-dev default-jre default-jdk openjdk-8-jdk openjdk-8-jre -y
+sudo apt-get install \
+build-essential fort77 xorg-dev liblzma-dev libblas-dev gfortran \
+gcc-multilib gobjc++ aptitude \
+libreadline-dev libbz2-dev libpcre2-dev \
+libcurl4 libcurl4-openssl-dev \
+default-jre default-jdk openjdk-8-jdk openjdk-8-jre -y
 ```
 
-## Optional packages
-### For the recommended packages
-Go to the top-level directory of the R sources, run
+### Optional packages
+
+1. Recommended packages: Go to the top-level directory of the R sources, run
 ```
 ./tools/rsync-recommended
 ```
 
-### For building documents
-```
-sudo apt-get install texinfo -y
-sudo apt-get install texlive -y
-sudo apt-get install texlive-fonts-extra -y
-```
-All in one
+2. For building documents:
 ```
 sudo apt-get install texinfo texlive texlive-fonts-extra -y
 ```
 
-## If you are as lazy as a sloth
-Unzip R source file into a folder and open your terminal at this folder:
-### Export JAVA path
+# R installation
+## Export JAVA path
 R requires a java path to find the include header. This is my personal setting, I am not sure if it will work for all system.
 ```
 ## Export a global environment for R to find the java path
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
-### Compile without documents 
+### Compiling R
+The code below compile R with all debugging information available and without the recommended packages
 ```
-./configure --enable-R-shlib --without-recommended-packages
+./configure CFLAGS='-g -O0' CXXFLAGS='-g -O0' --enable-R-shlib --enable-memory-profiling --without-recommended-packages
 make
 make check
 sudo make install
-```
-
-### Compile With documents
-```
-./configure --enable-R-shlib --without-recommended-packages
-make
-make check
-make pdf
-make info
-sudo make install
-sudo make install-info
-sudo make install-pdf
 ```
 
 
@@ -86,8 +62,6 @@ sudo make install-pdf
 ```
 sudo apt-get install libssl-dev libxml2-dev libcurl4-openssl-dev libgit2-dev -y
 ```
-
-
 
 ## Key words for search
 These are the error message you will see if your system does not meet one or more dependence requirement
