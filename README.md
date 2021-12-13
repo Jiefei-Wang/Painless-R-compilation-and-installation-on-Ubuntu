@@ -3,7 +3,12 @@ Compiling R involves installing tons of dependencies, though there are many docu
 
 Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (2019-12-06 r77536). If you like it, please contribute to this project by providing your test result.
 
-# Installing dependencies
+# Download the source code
+```
+svn checkout https://svn.r-project.org/R/trunk/ r-trunk
+```
+
+# Install dependencies
 ## Option 1: Using package management(Recommended)
 
 The build-in package management utility is a powerful tool to install all dependences for `R-base`. For installing them, you need to enable the source packages in your `/etc/apt/sources.list`. To do that, you can run
@@ -29,7 +34,6 @@ default-jre default-jdk openjdk-8-jdk openjdk-8-jre -y
 ```
 
 ### Optional packages
-
 1. Recommended packages: Go to the top-level directory of the R sources, run
 ```
 ./tools/rsync-recommended
