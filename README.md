@@ -1,10 +1,16 @@
 # Painless-R-compilation-and-installation-on-Ubuntu
 Compiling R involves installing tons of dependencies, though there are many documents on the internet instructing you how to achieve it, they are kind of outdated. If you are a lazy guy as me and tired to search for the dependencies of R. This is the right recipe for you. Run the commands at a terminal and you will have all the ingredients ready.
 
-Currently the code has been tested on Ubuntu 18.04.3 LTS. R version :4.0 devel (2019-12-06 r77536). If you like it, please contribute to this project by providing your test result.
+Currently the code has been tested on 
+```
+Ubuntu 20.04 LTS. R version :4.3 devel (2023-03-22 r84023)
+Ubuntu 18.04.3 LTS. R version :4.0 devel (2019-12-06 r77536). 
+```
+If you like it, please contribute to this project by providing your test result.
 
 # Download the source code
 ```
+sudo apt install subversion
 svn checkout https://svn.r-project.org/R/trunk/ r-source
 ```
 
