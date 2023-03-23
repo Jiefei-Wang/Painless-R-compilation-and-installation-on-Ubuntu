@@ -70,7 +70,7 @@ sudo make install
 
 # `devtools` package dependencies
 ```
-sudo apt-get install libssl-dev libxml2-dev libcurl4-openssl-dev libgit2-dev -y
+sudo apt-get install build-essential libcurl4-gnutls-dev libssl-dev libxml2-dev libcurl4-openssl-dev libgit2-dev -y
 ```
 
 ## Key words for search
